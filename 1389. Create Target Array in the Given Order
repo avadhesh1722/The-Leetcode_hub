@@ -1,0 +1,12 @@
+# https://leetcode.com/discuss/topic/3225693/simple-iterative-solution-using-stl-function-runtime-58-memory-9885/
+# SIMPLE O(N) Iterative / Traversal Solution
+class Solution {
+public:
+vector<int> createTargetArray(vector<int>& nums, vector<int>& index)
+    {   vector<int> temp;
+       for(int i=0; i<index.size(); i++){
+            temp.insert(temp.begin()+index[i], nums[i]);
+       }
+       return temp;     
+    }
+};
